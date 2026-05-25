@@ -1,0 +1,26 @@
+# Dataset files — large, download manually (see README)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.zip
+
+# Generated outputs — recreate by running notebook + excel_builder.py
+data/cleaned/*.csv
+excel/retail_analysis.xlsx
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
