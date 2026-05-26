@@ -254,7 +254,7 @@ def build_returns_sheet(wb: Workbook, df: pd.DataFrame):
             'Return_Value': g.loc[g['Revenue'] < 0, 'Revenue'].abs().sum(),
             'Sale_Lines': (g['Quantity'] > 0).sum(),
             'Return_Lines': (g['Quantity'] < 0).sum(),
-        }))
+        }), include_groups=False)
         .round(2)
         .reset_index()
     )
